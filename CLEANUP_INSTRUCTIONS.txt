@@ -1,0 +1,43 @@
+===========================================
+تعليمات تنظيف الكتب الصوتية
+===========================================
+
+المشكلة:
+بعض الكتب الصوتية في قاعدة البيانات تشير لملفات غير موجودة في storage/app/public
+
+الحل:
+استخدم السكريبت cleanup_audiobooks.php لحذف هذه الكتب
+
+الطريقة 1: عرض الكتب فقط (بدون حذف)
+-----------------------------------
+افتح Command Prompt أو PowerShell، ثم نفذ:
+
+    cd C:\xampp\htdocs\library
+    C:\xampp\php\php.exe cleanup_audiobooks.php --dry-run
+
+هذا سيعرض قائمة بالكتب التي لا تملك ملفات بدون حذفها.
+
+الطريقة 2: حذف الكتب (مع تأكيد)
+--------------------------------
+    C:\xampp\php\php.exe cleanup_audiobooks.php
+
+سيعرض الكتب ثم يسألك للتأكيد قبل الحذف.
+
+الطريقة 3: حذف مباشر (بدون تأكيد)
+----------------------------------
+    C:\xampp\php\php.exe cleanup_audiobooks.php --force
+
+⚠ تحذير: سيتم حذف الكتب مباشرة بدون تأكيد.
+
+===========================================
+
+الطريقة البديلة: استخدام Artisan Command
+===========================================
+إذا كنت تفضل استخدام Artisan:
+
+    C:\xampp\php\php.exe artisan audiobooks:cleanup --dry-run
+    C:\xampp\php\php.exe artisan audiobooks:cleanup
+    C:\xampp\php\php.exe artisan audiobooks:cleanup --force
+
+===========================================
+

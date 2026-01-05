@@ -1,0 +1,125 @@
+/* General body styling */
+body {
+    font-family: 'Figtree', Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.login-header {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.login-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.login-form input::placeholder {
+    color: #ddd;
+}
+
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.6);
+    transform: translateY(-2px);
+}
+
+
+.forgot-password-link {
+    display: block;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+    color: #ddd;
+}
+
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.remember-me label {
+    margin: 0;
+    color: #fff;
+}

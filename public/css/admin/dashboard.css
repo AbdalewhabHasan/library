@@ -1,0 +1,86 @@
+/* public/css/admin/dashboard.css */
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo الجميل للغة العربية */
+    color: #f0f0f0; /* لون نص فاتح ليناسب الخلفية الداكنة */
+    background: linear-gradient(-45deg, #0b1120, #1c2a4a, #3a506b, #1e3b5c);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    height: 100vh; /* تأكد من أن الخلفية تملأ الشاشة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* حركة الخلفية */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.dashboard-container {
+    background: rgba(0, 0, 0, 0.4); /* خلفية شبه شفافة للمحتوى */
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(8px); /* تأثير زجاجي جميل */
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+    font-size: 3rem; /* حجم خط كبير للعنوان */
+    margin-bottom: 1rem;
+    font-weight: 700; /* خط عريض */
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* تنسيق زر تسجيل الخروج */
+.logout-button {
+    background-color: #e74c3c; /* لون أحمر مميز */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b; /* لون أغمق عند المرور */
+    transform: translateY(-2px); /* تأثير رفع بسيط */
+}
+/* =================================
+   تنسيقات الأزرار الإضافية
+   ================================= */
+
+.main-actions {
+    margin-top: 30px; /* مسافة فوق الأزرار */
+}
+
+.management-button {
+    background-color: #3498db; /* لون أزرق */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-left: 15px; /* مسافة بينه وبين زر الخروج */
+}
+
+.management-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}

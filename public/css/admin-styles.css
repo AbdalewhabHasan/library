@@ -1,0 +1,227 @@
+/* =============================================== */
+/* == ملف التنسيق الاحترافي لواجهات الأدمن == */
+/* =============================================== */
+
+/* --- 1. إعدادات أساسية ومتغيرات التصميم --- */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap' );
+
+:root {
+    --admin-bg-main: #1a202c;
+    --admin-bg-card: #2d3748;
+    --admin-text-primary: #edf2f7;
+    --admin-text-secondary: #a0aec0;
+    --admin-primary: #805ad5; /* بنفسجي */
+    --admin-secondary: #3182ce; /* أزرق */
+    --admin-success: #38a169;
+    --admin-danger: #e53e3e;
+    --admin-border-color: #4a5568;
+    --admin-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+    --admin-radius: 12px;
+    --admin-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body.admin-page {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--admin-bg-main);
+    color: var(--admin-text-primary);
+    padding: 2rem;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* --- 2. تنسيق رأس الصفحة والأزرار الرئيسية --- */
+.admin-header {
+    background: var(--admin-bg-card);
+    padding: 1.5rem 2rem;
+    border-radius: var(--admin-radius);
+    margin-bottom: 2.5rem;
+    box-shadow: var(--admin-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid var(--admin-primary);
+}
+
+.admin-header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.btn-admin {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--admin-transition);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-admin-primary {
+    background: linear-gradient(135deg, var(--admin-primary), var(--admin-secondary));
+    color: white;
+}
+.btn-admin-secondary {
+    background: var(--admin-bg-main);
+    color: var(--admin-text-primary);
+    border: 1px solid var(--admin-border-color);
+}
+.btn-admin:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* --- 3. تنسيق بطاقات عرض الإعلانات (صفحة index) --- */
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.admin-card {
+    background: var(--admin-bg-card);
+    border-radius: var(--admin-radius);
+    overflow: hidden;
+    box-shadow: var(--admin-shadow);
+    transition: var(--admin-transition);
+    display: flex;
+    flex-direction: column;
+}
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.admin-card-image {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(30%);
+    transition: var(--admin-transition);
+}
+.admin-card:hover .admin-card-image {
+    filter: grayscale(0%);
+}
+
+.admin-card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-card-link {
+    font-size: 0.9rem;
+    color: var(--admin-text-secondary);
+    word-break: break-all;
+    margin-bottom: 1rem;
+}
+
+.admin-card-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--admin-border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge-admin {
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.badge-admin-success { background-color: var(--admin-success); color: white; }
+.badge-admin-secondary { background-color: var(--admin-text-secondary); color: var(--admin-bg-main); }
+
+.btn-delete-admin {
+    background: transparent;
+    border: 1px solid var(--admin-danger);
+    color: var(--admin-danger);
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    transition: var(--admin-transition);
+}
+.btn-delete-admin:hover {
+    background: var(--admin-danger);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* --- 4. تنسيق فورم الإضافة والتعديل (صفحة create) --- */
+.form-container {
+    max-width: 700px;
+    margin: auto;
+    background: var(--admin-bg-card);
+    padding: 2.5rem;
+    border-radius: var(--admin-radius);
+    box-shadow: var(--admin-shadow);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--admin-text-secondary);
+}
+
+.form-control-admin {
+    width: 100%;
+    background: var(--admin-bg-main);
+    border: 2px solid var(--admin-border-color);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: var(--admin-text-primary);
+    font-size: 1rem;
+    transition: var(--admin-transition);
+}
+.form-control-admin:focus {
+    outline: none;
+    border-color: var(--admin-primary);
+    box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.3);
+}
+
+.form-switch-admin {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.form-switch-admin input {
+    width: 40px;
+    height: 20px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--admin-border-color);
+}
+
+/* --- 5. رسائل التنبيه --- */
+.alert-admin {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+.alert-admin-success { background: var(--admin-success); }
+.alert-admin-danger { background: var(--admin-danger); }
+.alert-admin-info { background: var(--admin-secondary); }

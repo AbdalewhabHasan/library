@@ -1,0 +1,110 @@
+/* General body styling */
+.app-body {
+    font-family: 'Figtree', Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* Container for the content */
+.app-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Header styling */
+.app-header {
+    margin-bottom: 20px;
+}
+
+.app-logo {
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Main content styling */
+.app-main {
+    padding: 20px;
+    width: 100%;
+}
+
+.app-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.app-description {
+    font-size: 1em;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Buttons styling */
+.app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.6);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Footer styling */
+.app-footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #ddd;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    text-align: center;
+}

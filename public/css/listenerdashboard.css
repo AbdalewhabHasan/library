@@ -1,0 +1,454 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #6a11cb;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav div {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #c82333;
+}
+
+/* Container styling */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Header styling */
+h2.text-center {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* Alert messages styling */
+.alert {
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+/* Filter form styling */
+form.mb-4 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.form-select, .form-control {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+    outline: none;
+}
+/* "Show Downloaded Audio" Button Styling */
+.btn-show-downloaded {
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-show-downloaded:hover {
+    background-color: #2575fc;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.btn-show-downloaded:active {
+    background-color: #2d1b8d;
+    transform: translateY(2px);
+}
+
+.btn-show-downloaded:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+}
+
+
+.btn-primary {
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2575fc;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+/* Buttons styling */
+.btn-success, .btn-primary, .btn-info {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    box-shadow: 0 4px 15px rgba(23, 162, 184, 0.4);
+}
+
+/* Enhanced "Go to Bookmarked Audio" button styling */
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    box-shadow: 0 6px 15px rgba(255, 193, 7, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-warning:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Top buttons section */
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px; /* Added margin to push the audio books section down */
+}
+
+.top-buttons a {
+    text-decoration: none;
+}
+
+/* Card styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px; /* Adjusted height for smaller image size */
+    width: 100%; /* Ensures it covers the full width of the card */
+    object-fit: cover; /* Ensures the image maintains aspect ratio while filling the container */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+.card-body {
+    padding: 15px; /* Reduced padding to bring content closer */
+}
+
+/* Title right under the image */
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px; /* Reduced margin to bring title closer to the image */
+    margin-top: 10px; /* Added margin to ensure title is right under the image */
+}
+
+/* Description, genre, language, author, and narrator styling */
+.card-text {
+    font-size: 1rem; /* Adjusted font size */
+    color: #555;
+    line-height: 1.4; /* Adjusted line height */
+    margin-bottom: 10px; /* Reduced margin to bring content closer */
+}
+
+/* Author and narrator styling */
+.card-body small {
+    display: block; /* Ensure Author and Narrator are on separate lines */
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px; /* Reduced margin to bring content closer */
+    margin-top: 10px;
+}
+
+/* Badges for genre and language */
+.badge {
+    font-size: 0.9rem;
+    padding: 6px 20px; /* Adjusted padding */
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 8px; /* Added margin to bring badges closer to the title */
+}
+
+.badge.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.badge.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+/* Publisher button and subscription buttons */
+.card-body .btn-info, .card-body .btn-success, .card-body .btn-danger {
+    margin-top: 10px; /* Adjusted margin to bring buttons closer */
+    width: 100%;
+}
+/* Audio player styling */
+#audioPlayerContainer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: none;
+}
+
+#audioPlayer {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#bookmarkButton {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#bookmarkButton:hover {
+    background-color: #e0a800;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+}
+
+/* Star rating styling */
+.rating-stars {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.fa-star {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fa-star.text-warning {
+    color: #ffc107;
+}
+
+.fa-star.text-muted {
+    color: #ddd;
+}
+
+.fa-star:hover {
+    color: #ffc107;
+}
+
+/* Comment form styling */
+form.mt-3 {
+    margin-top: 1px;
+}
+
+textarea.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    width: 90%;
+    resize: vertical;
+}
+
+textarea.form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+}
+
+/* Footer styling */
+.card-footer {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    padding: 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Playlist selection form styling */
+.form-select {
+    font-size: 0.9rem;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form-select:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+}
+
+/* Remove rating button styling */
+.remove-rating-button {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-rating-button:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .top-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+    }
+
+    #audioPlayerContainer {
+        width: 90%;
+        left: 5%;
+    }
+}
